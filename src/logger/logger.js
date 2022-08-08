@@ -1,15 +1,6 @@
-const express = require('express');
-var bodyParser = require('body-parser');
+const welLine = "Welcome to my application. I am Soniya and a part of FunctionUp Plutonium cohort."
 
-const route = require('./routes/route.js');
 
-const app = express();
-
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
-
-app.use('/', route);
-
-app.listen(process.env.PORT || 3000, function() {
-    console.log('Express app running on port ' + (process.env.PORT || 3000))
-});
+let welcome = function() {
+    console.log(welLine)
+}
